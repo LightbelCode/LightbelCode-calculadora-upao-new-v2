@@ -285,76 +285,6 @@
 
 
 
-/* STYLES-PAGE-VERIFICACION */
-.title {
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.description {
-  font-size: 14px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.verification-input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid #333;
-}
-.confirm-button {
-  display: block;
-  font-family: poppins;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  text-align: center;
-  background-color: #000000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* STYLES-PAGE-MENSAJE-ENVIADO */
-
-.title {
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.description {
-  font-size: 14px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.verification-input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: 1px solid #333;
-}
-.confirm-button {
-  display: block;
-  font-family: poppins;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  text-align: center;
-  background-color: #000000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 /* STYLES-NOSOTROS */
 
@@ -373,7 +303,25 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ESTILOS CALCULADORA PAGINA */
+
+/* GENERALES */
 .head {
   padding: 10px 40px;
   position: relative;
@@ -387,6 +335,16 @@
   display: flex;
 
 }
+
+
+
+/* OCULTAR CONTAINERS - CALCULADORAS */
+.hidden {
+    display: none;
+}
+
+/* APARTADO DE TABLES */
+
 table {
   text-align: center;
   margin: auto;
@@ -430,8 +388,6 @@ border-collapse: separate;
 border-spacing: 0;
 }
 
-
-
 table.rounded-table th:first-child {
 border-top-left-radius: 10px;
 }
@@ -470,7 +426,21 @@ input[type=number]::-webkit-inner-spin-button {
 input[type="number"]:disabled {
   background: none;
 }
-input[name="promedio"] {
+
+/* INPUTS IMPORTANTES A TOMAR */
+input[name="promedioIngenieria"] {
+  height: 40px;
+  width: 100%;
+  font-size: 2.5em;
+  padding: 0;
+}
+input[name="promedioMedicina"] {
+  height: 40px;
+  width: 100%;
+  font-size: 2.5em;
+  padding: 0;
+}
+input[name="promedioOtros"] {
   height: 40px;
   width: 100%;
   font-size: 2.5em;
@@ -492,9 +462,6 @@ input[name="promedio"] {
 }
 .head .clearfix > a {
   float: right;
-/*  position: absolute;
-  right: 10%;
-  top: 50%;*/
   color: #218587;
   font-size: 1.2em;
 }
@@ -516,6 +483,145 @@ tbody td:nth-child(2) {
 tbody tr:nth-child(2) {
   height: 50px;
 }
+
+
+/* BOTONES INGENIERIA */
+.btnFinalIngenieria {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnFinalIngenieria:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.btnClearIngenieria {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnClearIngenieria:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+.btnRefreshIngenieria {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5em;
+}
+.btnClearIngenieria:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.disabled, .btnFinalIngenieria.disabled {
+  display: none;
+}
+
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+/* BOTONES MEDICINA */
+.btnFinalMedicina {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnFinalMedicina:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.btnClearMedicina {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnClearMedicina:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+.btnRefreshMedicina {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5em;
+}
+.btnClearMedicina:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.disabled, .btnFinalMedicina.disabled {
+  display: none;
+}
+
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+/* BOTONES OTROS */
 .btnFinal {
   color: #fff;
   border: 1px solid #071b33;
@@ -570,6 +676,8 @@ tbody tr:nth-child(2) {
 .disabled, .btnFinal.disabled {
   display: none;
 }
+
+
 .clearfix:after {
   content: '';
   clear: both;
@@ -580,6 +688,144 @@ tbody tr:nth-child(2) {
 a {
   text-decoration: none;
 }
+
+
+/* BOTONES INGENIERIA */
+.btnFinalIngenieria {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnFinalIngenieria:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.btnClearIngenieria {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnClearIngenieria:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+.btnRefreshIngenieria {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5em;
+}
+.btnClearIngenieria:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.disabled, .btnFinalIngenieria.disabled {
+  display: none;
+}
+
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+/* BOTONES OTROS */
+.btnFinalOtros {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnFinalOtros:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.btnClearOtros {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+}
+.btnClearOtros:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+.btnRefreshOtros {
+  color: #fff;
+  border: 1px solid #071b33;
+  padding-inline: 15px;
+  border-radius: 30px;
+  font-family: ;
+  background: #071b33;
+  transition: background-color 0.3s ease;
+  margin-top: 0.5em;
+}
+.btnClearOtros:hover {
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  font-family: ;
+}
+
+.disabled, .btnFinalOtros.disabled {
+  display: none;
+}
+
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+
 
 
 /* RESPONSIVE DESIGN */
@@ -661,6 +907,7 @@ a {
       margin-bottom: 8px;
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .clearfix {
       font-size: 0.8em;
@@ -695,7 +942,6 @@ a {
       width: 20%;
   }
 }
-
 
   @media screen and (max-width: 320px) {
     table {
@@ -790,7 +1036,6 @@ a {
         font-size: 0.95em;
     }
 }
-
 
   @media screen (max-width: 320px) {
     input.promedio.aprobado {
